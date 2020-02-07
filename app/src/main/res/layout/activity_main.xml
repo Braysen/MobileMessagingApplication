@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mensajeria"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/tvCelular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese Numero"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+            <EditText
+                android:id="@+id/etCelular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="0dp"
+                android:textColor="#2D83A0"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tvMensaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese Mensaje"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+            <EditText
+                android:id="@+id/etMensaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="30dp"
+                android:textColor="#2D83A0"
+                android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="600px"
+                android:layout_height="wrap_content"
+                android:text="Enviar"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@drawable/styletxt1"
+                android:background="@drawable/style1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
